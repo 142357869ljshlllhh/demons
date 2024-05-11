@@ -707,8 +707,66 @@
 <li><p>数据类型：</p>
 <ul>
 <li><p>datetime：基本日期和时间类型</p>
+<h3 id="1-时间"><a href="#1-时间" class="headerlink" title="1.时间"></a>1.时间</h3><ol>
+<li><p>datetime.date()：处理日期（年月日）</p>
+<ul>
+<li><p>修改日期格式：strftime</p>
+<p>例如：datetime.date.today().strftime(‘%Y-%m-%d %H:%M:%S’)</p>
+<p>输出为’2024-01-27 00:00:00’</p>
+<ul>
+<li>修改为国际标准格式：datetime.datetime.now().isoformat()</li>
+</ul>
+</li>
+<li><p>获取今天的日期：</p>
+<p>datetime.date.today()</p>
+<p>datetiem.datetime.now()</p>
+</li>
+</ul>
+</li>
+<li><p>datetime.time()：处理时间（时分秒、毫秒）</p>
+</li>
+<li><p>datetime.datetime()：处理日期+时间</p>
+</li>
+<li><p>datetime.timedelta()：处理时段（时间间隔）</p>
+</li>
+</ol>
+<h3 id="2-时间戳"><a href="#2-时间戳" class="headerlink" title="2.时间戳"></a>2.时间戳</h3><p>指格林威治时间1970年1月1日00时00分00秒其至现在的总秒数</p>
+<ol>
+<li><p>将时间戳转换成日期：</p>
+<p>datetime.date.fromtimestamp()</p>
+</li>
+<li><p>将日期转换为时间戳：</p>
+<p>timetuple函数</p>
+<p>返回秒数来表示时间的浮点数：time.mktime函数</p>
+</li>
+</ol>
+<h3 id="3-时间上的加减法"><a href="#3-时间上的加减法" class="headerlink" title="3.时间上的加减法"></a>3.时间上的加减法</h3><ol>
+<li><p>timedelta()：表示两个时间点的间隔</p>
+<p>例如：</p>
+<p>today &#x3D; datetime.datetime.now()</p>
+<p>yesterday &#x3D; today - datetime.tiemdelta(days&#x3D;1)</p>
+<p>hours &#x3D; today - datetime,timedelta(hours&#x3D;1)</p>
+</li>
+</ol>
 </li>
 <li><p>calendar：与日历相关的一般功能</p>
+<ol>
+<li><p>calendar.calendar(年)</p>
+<p>calendar.month(年，月)</p>
+<p>calendar.prmonth(年，月)&#x3D;print(calendar.month(年，月))</p>
+<p>calendar.prcal(年)&#x3D; print(calendar.calendar(年))</p>
+</li>
+<li><p>将日历列表化:calendar,monthcalendar()：嵌套列表，最里层列表有七个元素，代表一周,如果没有本月日期，则为0</p>
+</li>
+<li><p>判断闰年：calendar.isleap(年)</p>
+</li>
+<li><p>计算某月共有几天，从周几开始：</p>
+<p>例如：calendar.monthrange(2024，2)</p>
+<p>输出为(calendar.THURSDAY, 29)</p>
+</li>
+<li><p>计算</p>
+</li>
+</ol>
 </li>
 <li><p>collections：容器数据类型</p>
 </li>
@@ -885,7 +943,7 @@
 </tr>
 </tbody></table>
 <ol start="11">
-<li>0脚注：[^] 这<a href="%E8%AF%BBzheng">^1</a>是脚注[^脚注]</li>
+<li>脚注：[^] 这<a href="%E8%AF%BBzheng">^1</a>是脚注[^脚注]</li>
 </ol>
 <p>[^脚注]：这是长脚注</p>
 <ol start="12">
