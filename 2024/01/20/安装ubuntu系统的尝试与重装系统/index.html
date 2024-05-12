@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Doe">
+
+
+
+
+
+
+
+<title>在ubuntu系统中的摸索与重装系统 | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.1.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            Frame.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                在ubuntu系统中的摸索与重装系统
+            
+            
+        </div>
+        <span class="post-date">
+            Jan 20, 2024
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>抱着去熟悉一下Linux操作系统的念头，我看了网络上很多装双系统的教程，先是虚拟机体验了以下Ubuntu系统，但是总是想自己也尝试用u盘作为启动盘来装双系统。</p>
+<ol>
+<li>下载镜像安装包</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/20.04/">ubuntu-20.04.6-desktop-amd64.iso</a></p>
+<ol start="2">
+<li>制作启动U盘</li>
+</ol>
+<p>我选择下载<a target="_blank" rel="noopener" href="https://rufus.ie/zh/#google_vignette">rufus</a>，启动软件制作启动U盘</p>
+<p>之后重启开机时启动电脑Bios，把从U盘启动设置为优先项，然后U盘启动电脑，启动之后根据开机引导安装ubuntu系统到U盘即可</p>
+<hr>
+<p>但我在安装Ubuntu系统时操作失误把我的固态硬盘格式化了导致我没有了Windows系统，而我的Ubuntu系统也没有成功安装，导致我没有操作系统可以用，我试图在试用的Ubuntu系统中制作Windows的启动U盘，但是很显然是成功不了的，windows的软件很多Ubuntu使用不了，而网络上关于Ubuntu的攻略相比而言少很多，几乎没有在Ubuntu系统中安装windows系统的攻略，我尝试下载wine从而让我安装windows软件，但输入代码安装很慢，甚至失败，我一时无措，将Windows系统映像写入U盘，由于我是试用的Ubuntu系统，而这时Ubuntu系统的启动盘也被破坏，我的电脑因为没有操作系统无法开机</p>
+<p>没办法我只能去网吧下载windows系统和rufusU盘制作软件给我的电脑重装系统，重装后顺着引导遇到第一个麻烦，我没有以太网，只能shift+F10输入<code>OOBE\BYPASSNRO</code>之后重启则完成了，由于没有网络，不能安装驱动，也就无法连接WiFi，所以我用手机usb网络共享下载<a target="_blank" rel="noopener" href="https://www.sysceo.com/software-softwarei-id-258.html">驱动总裁</a>来自动安装驱动，wifi也就能连接了，之后也就是安装一些应用了，由于我重装的win11家庭版，所以登录之后就自动激活系统，省去一些密钥激活的过程，我一开始听信一些博主的话差点装了专业版，幸好并没有直接使用网络上的一些密钥，不然以后会多很多麻烦。</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2024/01/20/python%E5%AD%A6%E4%B9%A0/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2024/01/20/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E5%AD%A6%E4%B9%A0/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
